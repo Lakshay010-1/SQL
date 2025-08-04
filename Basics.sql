@@ -1,9 +1,6 @@
 -- SQL is not a case-sensitive language (commands).
-
 -- If a column has no value, then it is said to be NULL.
-
 -- Data is organized into tables (also known as relations) with rows (records) and columns (attributes).
-
 
 -- -- -- -- General Order -- -- -- 
 SELECT column(s)
@@ -14,54 +11,54 @@ HAVING condition
 ORDER BY column(s) ASC/DESC
 -- -- -- -- -- -- -- -- -- -- -- -- 
 
- -- -- -- Data Types -- -- -- 
+-- -- -- Data Types -- -- -- 
 -- -- -- -- #Numeric -- -- -- -- -- 
 
-INT             -- integer( -2,147,483,648 to 2,147,483,647 )
-TINYINT         -- integer(-128 to 127)
-BIT             -- can store x-bit values. x can range from 1 to 64. e.g-BIT(x)
-BIGINT          -- integer( -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 )
-FLOAT (M,D)     -- Decimal number - with precision to 23 digits
-DOUBLE (M,D)    -- Decimal number - with 24 to 53 digits
+1. INT             -- integer( -2,147,483,648 to 2,147,483,647 )
+2. TINYINT         -- integer(-128 to 127)
+3. BIT             -- can store x-bit values. x can range from 1 to 64. e.g-BIT(x)
+4. BIGINT          -- integer( -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 )
+5. FLOAT (M,D)     -- Decimal number - with precision to 23 digits
+6. DOUBLE (M,D)    -- Decimal number - with 24 to 53 digits
 
 -- -- -- -- #Data and Time  -- -- -- 
 
-DATE            -- date in format of YYYY-MM-DD ranging from 1000-01-01 to 9999-12-31
-DATETIME        -- It's a date and time combination (YYYY-MM-DD HH:MM:SS)
-TIME            -- It stores time (HH:MM:SS)
-YEAR            -- year in 4 digits format ranging from 1901 to 2155
+1. DATE            -- date in format of YYYY-MM-DD ranging from 1000-01-01 to 9999-12-31
+2. DATETIME        -- It's a date and time combination (YYYY-MM-DD HH:MM:SS)
+3. TIME            -- It stores time (HH:MM:SS)
+4. YEAR            -- year in 4 digits format ranging from 1901 to 2155
 
 -- -- -- -- #String/Text  -- -- -- --
 
-CHAR(M)         -- string(0-255), can store characters of fixed length
-VARCHAR(M)      -- string(0-255), can store characters up to given length
-BLOB(M) or TEXT -- string(0-65535), can store binary large object  
+1. CHAR(M)         -- string(0-255), can store characters of fixed length
+2. VARCHAR(M)      -- string(0-255), can store characters up to given length
+3. BLOB(M) or TEXT -- string(0-65535), can store binary large object  
 
 -- -- -- -- #UNSIGNED -- -- -- 
 
-UNSIGNED        -- We can also use UNSIGNED with datatypes when we only have positive values to add. Eg - UNSIGNED INT
+1. UNSIGNED        -- We can also use UNSIGNED with datatypes when we only have positive values to add. Eg - UNSIGNED INT
 
 -- -- -- -- -- -- -- -- -- -- -- -- --
 
 -- Constraints
-NOT NULL 
+1. NOT NULL 
     -- column_name data_type NOT NULL;
-DEFAULT 
+2. DEFAULT 
     -- column_name data_type DEFAULT Default_Value;
-UNIQUE 
+3. UNIQUE 
     -- column_name data_type UNIQUE;
-CHECK 
+4. CHECK 
     -- column_name data_type CHECK (condition);
-PRIMARY KEY 
+5. PRIMARY KEY 
     -- column_name data_type PRIMARY KEY;
     -- PRIMARY KEY (col_01,col_02)
-FOREIGN KEY 
+6. FOREIGN KEY 
     -- FOREIGN KEY (column_nameA) REFERENCES tableB (column_nameB)
 
 -- Field
-AUTO_INCREMENT 
+1. AUTO_INCREMENT 
     --Auto-increment allows a unique number to be generated automatically when a new record is inserted into a table.
-On DELETE SET NULL
+2. On DELETE SET NULL
     --this means if a record in the parent table (referenced table) is deleted then the corresponding entry or values
     --in the child table (referencing table) will be set to NULL.
 
