@@ -5,6 +5,7 @@
 -- -- -- -- --  Create -- -- -- -- 
 -- Create Database
 CREATE DATABASE db_name;
+-- e.g.- CREATE DATABASE school;
 CREATE DATABASE IF NOT EXISTS db_name;
 -- e.g.- CREATE DATABASE IF NOT EXISTS school;
 
@@ -17,13 +18,13 @@ CREATE TABLE table_name(
 );
 /*
 e.g.-
-  (i).CREATE TABLE student(
+(i).CREATE TABLE student(
 	id INT PRIMARY KEY,
     name VARCHAR(50),
     age INT NOT NULL
     );
 
- (ii).CREATE TABLE teacher(
+(ii).CREATE TABLE teacher(
 	id INT,
     name VARCHAR(50),
     stu_id INT,
