@@ -1,6 +1,6 @@
 -- SQL is not a case-sensitive language (commands).
 -- If a column has no value, then it is said to be NULL.
--- Data is organized into tables (also known as relations) with rows (records) and columns (attributes).
+-- Data(also known as Datum) is organized into tables (also known as relations) with rows (records) and columns (attributes).
 
 -- -- -- -- General Order -- -- -- 
 SELECT column(s)
