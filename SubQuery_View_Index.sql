@@ -10,7 +10,7 @@ select (select AVG(stu_marks) from student) ,name from student;					-- select ex
 CREATE VIEW v1 as select id, name from student;
 select * from v1;
 drop view v1;
- 
+
 --  INDEX
 CREATE INDEX index_name ON table_name (column1, column2, ...);
 DROP INDEX index_name;
