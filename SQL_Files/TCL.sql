@@ -13,7 +13,6 @@ e.g.-
 */
 
 
-
 -- Commit command 
 -- ( Saves all the changes permanently )
 COMMIT;
