@@ -64,7 +64,7 @@
   1. `DATE`
      - Format: `YYYY-MM-DD`
      - Range: 1000-01-01 to 9999-12-31
-  2. `DATETIME`
+  2. `DATETIME / TIMESTAMP`
      - Format: `YYYY-MM-DD HH:MM:SS`
   3. `TIME`
      - Format: `HH:MM:SS`
